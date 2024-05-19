@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/165216471015705580/fcb3cec09c784448be7df2e04bafacc5/artifacts
+end_time: 1715770951623
+entry_point_name: ''
+experiment_id: '165216471015705580'
+lifecycle_stage: active
+run_id: fcb3cec09c784448be7df2e04bafacc5
+run_name: loud-tern-185
+run_uuid: fcb3cec09c784448be7df2e04bafacc5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715770945449
+status: 3
+tags: []
+user_id: hp

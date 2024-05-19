@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/165216471015705580/d2e5f5629f4a47cabed5455d2f29aebe/artifacts
+end_time: 1715688426879
+entry_point_name: ''
+experiment_id: '165216471015705580'
+lifecycle_stage: active
+run_id: d2e5f5629f4a47cabed5455d2f29aebe
+run_name: bedecked-penguin-71
+run_uuid: d2e5f5629f4a47cabed5455d2f29aebe
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715688418916
+status: 3
+tags: []
+user_id: hp

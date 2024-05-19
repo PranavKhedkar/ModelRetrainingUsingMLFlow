@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/165216471015705580/2c707c5f5bc54aafae816b9c7de9396c/artifacts
+end_time: 1715262157525
+entry_point_name: ''
+experiment_id: '165216471015705580'
+lifecycle_stage: active
+run_id: 2c707c5f5bc54aafae816b9c7de9396c
+run_name: dapper-rook-308
+run_uuid: 2c707c5f5bc54aafae816b9c7de9396c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715262152590
+status: 3
+tags: []
+user_id: hp

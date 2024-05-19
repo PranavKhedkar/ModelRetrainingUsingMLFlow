@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/608619997575494689/22fd1bf2284845ccb15b25c4f5dd1bd8/artifacts
+end_time: 1715061419511
+entry_point_name: ''
+experiment_id: '608619997575494689'
+lifecycle_stage: active
+run_id: 22fd1bf2284845ccb15b25c4f5dd1bd8
+run_name: brawny-foal-26
+run_uuid: 22fd1bf2284845ccb15b25c4f5dd1bd8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715061413092
+status: 3
+tags: []
+user_id: hp

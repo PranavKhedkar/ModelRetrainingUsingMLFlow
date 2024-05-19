@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/165216471015705580/dbdf7d51220e4ce1bc95a5bcd56f8e83/artifacts
+end_time: 1715770999365
+entry_point_name: ''
+experiment_id: '165216471015705580'
+lifecycle_stage: active
+run_id: dbdf7d51220e4ce1bc95a5bcd56f8e83
+run_name: honorable-loon-436
+run_uuid: dbdf7d51220e4ce1bc95a5bcd56f8e83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715770993468
+status: 3
+tags: []
+user_id: hp

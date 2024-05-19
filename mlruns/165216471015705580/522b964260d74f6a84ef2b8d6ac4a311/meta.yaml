@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/165216471015705580/522b964260d74f6a84ef2b8d6ac4a311/artifacts
+end_time: 1715927330570
+entry_point_name: ''
+experiment_id: '165216471015705580'
+lifecycle_stage: active
+run_id: 522b964260d74f6a84ef2b8d6ac4a311
+run_name: nebulous-robin-966
+run_uuid: 522b964260d74f6a84ef2b8d6ac4a311
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715927325828
+status: 3
+tags: []
+user_id: hp

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/165216471015705580/60c8aeeca62e439cbdb770e071a7575a/artifacts
+end_time: 1715602662835
+entry_point_name: ''
+experiment_id: '165216471015705580'
+lifecycle_stage: active
+run_id: 60c8aeeca62e439cbdb770e071a7575a
+run_name: treasured-slug-445
+run_uuid: 60c8aeeca62e439cbdb770e071a7575a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715602650653
+status: 3
+tags: []
+user_id: hp

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/a9a7904960774a1680ca04534c0134dc/artifacts
+end_time: 1715000049210
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a9a7904960774a1680ca04534c0134dc
+run_name: clean-pig-800
+run_uuid: a9a7904960774a1680ca04534c0134dc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715000044325
+status: 3
+tags: []
+user_id: hp
