@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/747666890729067947/b431b93c9e654b03b39e007d411d9778/artifacts
+end_time: 1715950412078
+entry_point_name: ''
+experiment_id: '747666890729067947'
+lifecycle_stage: active
+run_id: b431b93c9e654b03b39e007d411d9778
+run_name: resilient-bat-787
+run_uuid: b431b93c9e654b03b39e007d411d9778
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715950405095
+status: 3
+tags: []
+user_id: hp

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/747666890729067947/a0edd84d16a94692bfeaa99819d5b33c/artifacts
+end_time: 1715951023866
+entry_point_name: ''
+experiment_id: '747666890729067947'
+lifecycle_stage: active
+run_id: a0edd84d16a94692bfeaa99819d5b33c
+run_name: dapper-fly-121
+run_uuid: a0edd84d16a94692bfeaa99819d5b33c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715951019178
+status: 3
+tags: []
+user_id: hp

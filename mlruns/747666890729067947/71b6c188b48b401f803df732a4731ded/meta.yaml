@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/747666890729067947/71b6c188b48b401f803df732a4731ded/artifacts
+end_time: 1715944755667
+entry_point_name: ''
+experiment_id: '747666890729067947'
+lifecycle_stage: active
+run_id: 71b6c188b48b401f803df732a4731ded
+run_name: nervous-moose-213
+run_uuid: 71b6c188b48b401f803df732a4731ded
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715944745890
+status: 3
+tags: []
+user_id: hp

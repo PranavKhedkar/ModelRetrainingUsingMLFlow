@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/747666890729067947/53a71719efca402a8281b10cef2a2ac5/artifacts
+end_time: 1715944717874
+entry_point_name: ''
+experiment_id: '747666890729067947'
+lifecycle_stage: active
+run_id: 53a71719efca402a8281b10cef2a2ac5
+run_name: colorful-fox-581
+run_uuid: 53a71719efca402a8281b10cef2a2ac5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1715944717536
+status: 4
+tags: []
+user_id: hp
