@@ -1,3 +1,11 @@
+"""
+
+Author:  Pranav Khedkar
+Date:    20 May 2024
+
+"""
+
+# Import required libraries
 import pandas as pd
 import numpy as np
 from sklearn.linear_model import LinearRegression
@@ -9,10 +17,8 @@ import glob
 import os
 
 # Load data
-
-list_of_files = glob.glob('D:\MLFlow\Housing Price - Retrain\Training Data\*.csv') # * means all if need specific format then *.csv
-latest_file = max(list_of_files, key=os.path.getctime)
-print("latest_file: ",latest_file)
+list_of_files = glob.glob('D:\MLFlow\Housing Price - Retrain\Training Data\*.csv') 
+latest_file = max(list_of_files, key=os.path.getctime)  # Get latest file
 df = pd.read_csv(latest_file)
 
 # Split features and labels
@@ -22,6 +28,7 @@ y = df['Price']
 # Train test split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
 
+# Specify Parameters
 params = {
     "fit_intercept": True,
 }
@@ -48,7 +55,7 @@ with mlflow.start_run():
     # Log the performance metric
     mlflow.log_metric("rmse", rmse)
 
-    # Set a tag that we can use to remind ourselves what this run was for
+    # Set a tag
     mlflow.set_tag("Training", "LinearRegessor")
 
     # Infer the model signature
@@ -62,6 +69,4 @@ with mlflow.start_run():
         signature=signature,
         registered_model_name="LinearRegressor",
     )
-
-print(model_info)
 
