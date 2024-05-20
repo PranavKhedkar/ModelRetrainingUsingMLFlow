@@ -1,3 +1,11 @@
+"""
+
+Author:  Pranav Khedkar
+Date:    20 May 2024
+
+"""
+
+# Import required libraries
 import streamlit as st
 import pandas as pd
 from sklearn.metrics import accuracy_score
@@ -5,9 +13,9 @@ import subprocess
 import mlflow.pyfunc
 from mlflow import MlflowClient
 import os
-import time
 import math
 
+# Load the lastest version of the model from MLFlow
 def load_model():
     client = MlflowClient()
     mlflow.set_tracking_uri("http://127.0.0.1:5000")
@@ -25,25 +33,30 @@ def load_model():
             print(f"Version: {m.version}")
             return model, m.name, m.version
 
+# Define the streamlit frontend
 def main():
 
     model, model_name, model_version = load_model()
 
-    st.title("House Price Predictor")
+    st.title("House Price Predictor")   # title
 
     # Take input from the user
     Sqft = st.number_input("Enter the Sqft area of the house:", step=30)
 
+    # When submitted, call the make_prediction function
     if st.button(label='Submit'):
-        make_prediction(Sqft, model)
+        make_prediction(Sqft, model)    
     
+    # Take input from the user
     ground_truth = st.number_input("Enter the actual price paid:", step=30)
 
+    # When submitted using "Submit Actual Price", call the store_groundtruth function and store it in groundtruth.csv
     if st.button(label='Submit Actual Price'):
-        store_groundtruth(Sqft, ground_truth)
+        store_groundtruth(Sqft, ground_truth)   
     
+    # When clicked, check for drift by calling drift_detection function
     if st.button(label='Check for Drift', type="primary"):
-        drift_detection()
+        drift_detection()   
     
     # Display Model Information
     style = """
@@ -63,12 +76,14 @@ def main():
     st.markdown(f"""<div class="bottom-right">Model Used: {space}{model_name}<br>
     Model Version: {space}1.{model_version}</div>""", unsafe_allow_html=True)
 
-def make_prediction(Sqft, model):
-    # Make prediction
-    prediction = model.predict(pd.DataFrame({"Sqft": [Sqft]}))
-    store_results(Sqft, prediction)
-    st.write("Appropriate Price:    ₹",str(math.ceil(prediction[0])))
 
+# Make prediction
+def make_prediction(Sqft, model):
+    prediction = model.predict(pd.DataFrame({"Sqft": [Sqft]}))  # use the model and predict
+    store_results(Sqft, prediction)     # store predictions by calling the store_results function
+    st.write("Appropriate Price:    ₹",str(math.ceil(prediction[0])))   # display output
+
+# Store predictions mode by the model
 def store_results(Sqft, prediction):
     df_new = pd.DataFrame({"Input": [Sqft], "Prediction": math.ceil(prediction)})
 
@@ -94,8 +109,11 @@ def store_groundtruth(Sqft, user_entered_value):
         df_new.to_csv("groundtruth.csv", index=False, header=False, mode="a")
 
 def drift_detection():
+    
+    # Set a accuracy threshold
     accuracy_threshold = 0.75
 
+    # Fetch predictions and groundtruth
     df_predictions = pd.read_csv("predictions.csv")
     df_groundtruth = pd.read_csv("groundtruth.csv")
 
@@ -106,10 +124,11 @@ def drift_detection():
     if accuracy < accuracy_threshold:
         st.write("Drift Detected")
         st.write("Model Accuracy:   ",str(accuracy*100),"%")
-        print("________________RERUN_INTIATED________________")
+        print("________________RETRAINING_INTIATED________________")
         # Retrain the model
         subprocess.run(["D:\MLFlow\Retrain\.model_retrain\Scripts\python.exe", "trainmodel.py"])
 
+        # Refresh the page to update the model version displayed
         st.rerun()
     else:
         st.write("Drift Not Detected")
