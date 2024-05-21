@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1716289437037
+current_stage: None
+description: ''
+last_updated_timestamp: 1716289437037
+name: LinearRegressor
+run_id: d9895edfba714d028f83d2795fc7032f
+run_link: ''
+source: mlflow-artifacts:/747666890729067947/d9895edfba714d028f83d2795fc7032f/artifacts/House_price
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/747666890729067947/d9895edfba714d028f83d2795fc7032f/artifacts/House_price
+user_id: null
+version: 5

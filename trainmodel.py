@@ -17,7 +17,7 @@ import glob
 import os
 
 # Load data
-list_of_files = glob.glob('D:\MLFlow\Housing Price - Retrain\Training Data\*.csv') 
+list_of_files = glob.glob('Training Data\*.csv') 
 latest_file = max(list_of_files, key=os.path.getctime)  # Get latest file
 df = pd.read_csv(latest_file)
 
