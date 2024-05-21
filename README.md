@@ -23,3 +23,13 @@ Steps:
 9. If the accuracy falls below 75%, retraining is initiated using trainmodel.py.
 
 If the accuracy falls below 75%, trainmodel.py is executed. This will first fetch the latest data from the Training Data folder (Step 1) and train the model on it (Step 2). This model is then stored as a new version in the MLFlow Model Registry (Step 3). As predictions are done using the latest model, henceforth this model will be fetched for making predictions (Step 4). This cycle repeats every time the "Check Data Drift" button is pressed.
+
+## Pre-execution Steps
+- Start MLFlow server
+```
+mlflow ui
+```
+- Run streamlit to view the interface
+```
+streamlit run frontend.py
+```
