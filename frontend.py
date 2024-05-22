@@ -101,8 +101,9 @@ def drift_detection():
         accuracy = accuracy_score(df_predictions["Prediction"], df_groundtruth["groundtruth"])
         print("Accuracy:", accuracy)
         if accuracy < accuracy_threshold:
-            st.write("Drift Detected")
+            st.write("Model Drift Detected")
             st.write("Model Accuracy:   ",str(accuracy*100),"%")
+            st.write("Retraining Initated")
             print("________________RERUN_INTIATED________________")
             # Retrain the model
             subprocess.run(["hprice\Scripts\python.exe", "trainmodel.py"])
