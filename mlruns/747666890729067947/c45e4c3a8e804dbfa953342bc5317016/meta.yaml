@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/747666890729067947/c45e4c3a8e804dbfa953342bc5317016/artifacts
+end_time: 1716356504639
+entry_point_name: ''
+experiment_id: '747666890729067947'
+lifecycle_stage: active
+run_id: c45e4c3a8e804dbfa953342bc5317016
+run_name: unruly-flea-707
+run_uuid: c45e4c3a8e804dbfa953342bc5317016
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716356497337
+status: 3
+tags: []
+user_id: hp
