@@ -1,10 +1,8 @@
 ## Table of Contents
-- [Problem Statement](#ProblemStatement)
-- [Technologies Used](#TechnologiesUsed)
-- [Workflow](#Workflow)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Pre-execution Steps](#Pre-executionSteps)
+- [Problem Statement](#problem-statement)
+- [Technologies Used](#technologies-used)
+- [Workflow](#workflow)
+- [Pre-execution Steps](#pre-execution-steps)
 
 ## Problem Statement:
 We have a trained ML model that predicts the price of a house based on its square footage. Over time, the price of houses has increased, rendering the predictions of the model inaccurate. Thus, it needs to be retrained on new data to learn the updated relationship between a house's square footage and its price.
