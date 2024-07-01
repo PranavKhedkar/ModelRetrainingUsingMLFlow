@@ -43,7 +43,7 @@ streamlit run frontend.py
 
 ## Front-end
 
-# Streamlit
+### Streamlit
 ![Screenshot 2024-07-01 162254](https://github.com/PranavKhedkar/ModelRetrainingUsingMLFlow/assets/99120112/5b5152a4-0bd1-4609-8374-77bebfcda270)
 1. This area has two parts:
    a. The first part takes Sqft as input to get the price prediction from the model. Once a value is submitted, the prediction will be visible below it.
@@ -52,6 +52,6 @@ streamlit run frontend.py
 3. All the entries in the groundtruth.csv and predictions.csv files can be erased using the 'Erase' button. This can be useful when the data points in both the CSV files are not equal. In this condition, _accuracy_score_ cannot evaluate the model.
 4. This area displays information about the model.
 
-# MLflow
+### MLflow
 ![Screenshot 2024-07-01 160120](https://github.com/PranavKhedkar/ModelRetrainingUsingMLFlow/assets/99120112/6357027f-cf62-49ee-ba30-5274541a0609)
 Each time retraining takes place, it is logged in MLflow. The newly trained model is logged as a new version.
